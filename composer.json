@@ -1,0 +1,24 @@
+{
+    "name": "phoneauth/support",
+    "description": "changes laravel default email based authentication to phone number auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amir94rp",
+            "email": "rp.amir94@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhoneAuth\\Support": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhoneAuth\\Support\\Verification\\PhoneAuthServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
