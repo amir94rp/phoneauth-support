@@ -37,7 +37,7 @@ class VerificationBrokerManager implements FactoryContract
      * Attempt to get the broker from the local cache.
      *
      * @param  string|null  $name
-     * @return \PhoneAuth\Auth\Verification\VerificationBroker
+     * @return \PhoneAuth\Support\Verification\VerificationBroker
      */
     public function broker($name = null)
     {
@@ -50,7 +50,7 @@ class VerificationBrokerManager implements FactoryContract
      * Resolve the given broker.
      *
      * @param  string  $name
-     * @return \PhoneAuth\Auth\Verification\VerificationBroker
+     * @return \PhoneAuth\Support\Verification\VerificationBroker
      *
      */
     protected function resolve($name)
@@ -72,7 +72,7 @@ class VerificationBrokerManager implements FactoryContract
      * Create a token repository instance based on the given configuration.
      *
      * @param  array  $config
-     * @return \PhoneAuth\Auth\Verification\DatabaseTokenRepository
+     * @return \PhoneAuth\Support\Verification\DatabaseTokenRepository
      */
     protected function createTokenRepository(array $config)
     {

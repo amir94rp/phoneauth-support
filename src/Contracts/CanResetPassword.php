@@ -1,8 +1,6 @@
 <?php
 
-
 namespace PhoneAuth\Support\Contracts;
-
 
 interface CanResetPassword
 {

@@ -8,11 +8,11 @@ use PhoneAuth\Support\Contracts\VerificationBroker;
 /**
  * @method static mixed verifyToken(array $credentials)
  * @method static string sendVerificationToken(array $credentials, \Closure $callback = null)
- * @method static string createToken(\PhoneAuth\Auth\Contracts\MustVerifyNumber $user)
- * @method static void deleteToken(\PhoneAuth\Auth\Contracts\MustVerifyNumber $user)
- * @method static bool tokenExists(\PhoneAuth\Auth\Contracts\MustVerifyNumber $user, string $token)
+ * @method static string createToken(\PhoneAuth\Support\Contracts\MustVerifyNumber $user)
+ * @method static void deleteToken(\PhoneAuth\Support\Contracts\MustVerifyNumber $user)
+ * @method static bool tokenExists(\PhoneAuth\Support\Contracts\MustVerifyNumber $user, string $token)
  *
- * @see \PhoneAuth\Auth\Verification\VerificationBroker
+ * @see \PhoneAuth\Support\Verification\VerificationBroker
  */
 
 class PhoneNumber extends Facade
