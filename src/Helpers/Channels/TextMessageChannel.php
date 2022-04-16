@@ -18,11 +18,10 @@ class TextMessageChannel
     {
         $response = $notification->toTextMessage($notifiable);
         $url = config('phoneauth.channels.sms.url') . $response['url'];
-        $APIKey = config('phoneauth.channels.sms.key');
 
         Http::accept('application/json')
             ->withHeaders([
-                'Authorization' => 'AccessKey ' . $APIKey
+                'Content-Type' => 'application/json'
             ])->post($url, $response['message']);
     }
 }
